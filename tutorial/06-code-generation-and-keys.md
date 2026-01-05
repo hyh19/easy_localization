@@ -1,4 +1,4 @@
-# 06 代码生成与强类型 Key
+# 第 06 章：代码生成与强类型 Key
 
 直接在代码中编写字符串 Key（如 `'title'.tr()`）容易因拼写错误导致翻译失效。`easy_localization` 提供了强大的命令行工具来解决这个问题。
 
@@ -12,7 +12,7 @@
 
 通过生成 `AssetLoader`，您可以将 JSON 数据编译进 Dart 代码中，从而避免运行时的文件 IO。
 
-### 生成命令
+### 生成 Asset Loader 命令
 
 ```bash
 flutter pub run easy_localization:generate
@@ -36,7 +36,7 @@ EasyLocalization(
 
 生成一个包含所有翻译 Key 的类，以便在代码中以强类型方式引用。
 
-### 生成命令
+### 生成 Locale Keys 命令
 
 ```bash
 flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart
